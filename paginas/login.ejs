@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MorfiStore</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/imagenes/icon1.png" type="image/x-icon">
+</head>
+<body>
+    <header id="cabecera" class="cabecera-sticky">
+        <div class="contenedor">
+            <div class="fila">
+                <figure id="logo">
+                    <a title="Inicio" href="index.html">
+                        <img src="/imagenes/logo2.png" class="img-ajustar">
+                    </a>
+                </figure> <!-- logo -->
+                <article id="titulo" class="contenedor">
+                    <h1>Bienvenidos a MorfiStore</h1>
+                </article>
+            </div> <!-- fila -->
+        </div> <!-- contenedor -->
+    </header> <!-- cabecera -->
+
+
+    <!-- area de formulario -->
+    <section id="formulario" class="espaciado">
+        <div class="contenedor">
+            <h2>Iniciar Sesión</h2>
+            <!-- Objeto formulario -->
+            <form id="formulario-objeto" action="/auth/login" method="post">
+                <div class="campo-contenedor">
+                    <input class="campo-entrada" required type="text" name="correo"  placeholder="Introduce tu correo">
+                </div>
+                <div class="campo-contenedor">
+                    <input class="campo-entrada" required type="password" name="password" placeholder="contraseña">
+                </div>
+                <p>
+                    <input class="boton-enviar" type="submit" value="Enviar">
+                </p>
+            </form> <!-- formulario-objeto -->
+
+            <a href="/auth/registro" class="boton-registro">Registrarse</a>
+        </div> <!-- contenedor -->
+    </section> <!-- formulario -->
+</body>
+</html>
